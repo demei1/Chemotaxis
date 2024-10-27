@@ -20,7 +20,7 @@ Stickmen (int x, int y){
     myY = myY + (int)(Math.random()*3)-1;
     myRotation = (int)(Math.random()*180)-90;
    
-   if (myX > 800 || myX < 0 || myY > 800|| myY < 0){
+   if (myX > 600 || myX < 0 || myY > 600|| myY < 0){
      myX = (int)(Math.random()*width);
      myY = (int)(Math.random()*height);
    }
@@ -61,7 +61,7 @@ Stickmen [] stickyArmy;
 
 
 void setup(){
-  size (800,800);
+  size (600,600);
    stickyArmy = new Stickmen[5];
   for (int i = 0; i < stickyArmy.length; i++){
    stickyArmy[i] = new Stickmen((int)(Math.random()*width), ((int)(Math.random()*height)));
